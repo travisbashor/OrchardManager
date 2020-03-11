@@ -1,1 +1,4 @@
-<app-apple *ngFor="let apple of apples$ | async"></app-apple>
+
+<div class="apples-container">
+    <app-apple-detail *ngFor="let apple of apples$ | async" [apple]="apple"></app-apple-detail>
+</div>

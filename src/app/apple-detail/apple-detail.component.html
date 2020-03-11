@@ -1,4 +1,15 @@
-<div *ngIf="apple">
-    <h2>{{ apple.description }}</h2>
-    <div>ID: {{ apple.id }}</div>
-</div>
+<mat-card class="apple-card">
+    <mat-card-header>
+        <mat-card-title>{{ apple.description }}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="../../assets/images/{{apple.imageName}}" />
+    <mat-card-content>
+        <p>
+            So delicious
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button>BUY</button>
+        <button mat-button>SELL</button>
+    </mat-card-actions>
+</mat-card>

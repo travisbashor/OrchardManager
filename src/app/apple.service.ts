@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Apple } from './models/apple.model';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class AppleService {
     private _applesUrl = 'api/apples';
 

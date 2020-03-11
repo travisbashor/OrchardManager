@@ -8,12 +8,42 @@ import { Apple } from './models/apple.model';
 export class AppleDataService implements InMemoryDbService {
     createDb() {
         const apples: Apple[] = [
-            { id: 1, description: 'Pink Pearl', rateOfGrowth: 5 },
-            { id: 2, description: 'Ambrosia', rateOfGrowth: 7 },
-            { id: 3, description: 'Arkansas Black', rateOfGrowth: 3 },
-            { id: 4, description: 'Winesap', rateOfGrowth: 2 },
-            { id: 5, description: 'Cortland', rateOfGrowth: 10 },
-            { id: 6, description: 'Opal', rateOfGrowth: 12 }
+            {
+                id: 1,
+                description: 'Pink Pearl',
+                imageName: 'pink-pearl.jpg',
+                rateOfGrowth: 5
+            },
+            {
+                id: 2,
+                description: 'Ambrosia',
+                imageName: 'pink-pearl.jpg',
+                rateOfGrowth: 7
+            },
+            {
+                id: 3,
+                description: 'Arkansas Black',
+                imageName: 'pink-pearl.jpg',
+                rateOfGrowth: 3
+            },
+            {
+                id: 4,
+                description: 'Winesap',
+                imageName: 'pink-pearl.jpg',
+                rateOfGrowth: 2
+            },
+            {
+                id: 5,
+                description: 'Cortland',
+                imageName: 'pink-pearl.jpg',
+                rateOfGrowth: 10
+            },
+            {
+                id: 6,
+                description: 'Opal',
+                imageName: 'pink-pearl.jpg',
+                rateOfGrowth: 12
+            }
         ];
         return { apples };
     }
